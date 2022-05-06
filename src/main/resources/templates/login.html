@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>login</title>
+
+</head>
+<body>
+<div>
+  <img th:src="@{/images/login.jpg}" class="img-responsive center-block" width="300" height="300" alt="Logo" />
+    <h3 class="form-signin-heading" th:text="Welcome"></h3>
+    <br/>
+  <form method="post" action="/login">
+    <label>Enter e-mail</label>
+    <label>
+      <input name="email"/>
+    </label>
+    <label>Enter password</label>
+    <label>
+      <input type="password" name="password"/>
+    </label>
+    <input type="submit"/>
+  </form>
+</div>
+</body>
+</html>
